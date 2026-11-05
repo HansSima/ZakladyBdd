@@ -14,3 +14,7 @@ Feature: pokus
     And toto je nejaka akce
     Then overeni vysledku
 
+  Scenario: Kalkulacka - soucet dvou cisel
+    Given Uzivatel ma zadany dve cisla 5 a 8
+    When Uzivatel secte tato dve cisla
+    Then Uzivatel vidi na kalkulacce vysledek 13

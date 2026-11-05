@@ -5,21 +5,22 @@ import io.cucumber.java.en.When;
 
 public class KalkulackaTest {
 
+    int prvCislo;
+    int druCislo;
+
     @Given("Uzivatel ma zadany dve cisla {int} a {int}")
-    public void uzivatelMaZadanyDveCislaA(int arg0, int arg1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void uzivatelMaZadanyDveCislaA(int prvniCislo, int druheCislo) {
+        prvCislo = prvniCislo;
+        druCislo = druheCislo;
     }
 
     @When("Uzivatel secte tato dve cisla")
     public void uzivatelSecteTatoDveCisla() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+
     }
 
     @Then("Uzivatel vidi na kalkulacce vysledek {int}")
-    public void uzivatelVidiNaKalkulacceVysledek(int arg0) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void uzivatelVidiNaKalkulacceVysledek(int predpokladanyVysledek) {
+
     }
 }

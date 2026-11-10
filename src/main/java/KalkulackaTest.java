@@ -25,4 +25,9 @@ public class KalkulackaTest {
     public void uzivatelVidiNaKalkulacceVysledek(int predpokladanyVysledek) {
         assertEquals(predpokladanyVysledek, vypoctenyVysledek);
     }
+
+    @When("Uzivatel vydeli tato dve cisla")
+    public void uzivatelVydeliTatoDveCisla() {
+        vypoctenyVysledek = prvCislo / druCislo;
+    }
 }

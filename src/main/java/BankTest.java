@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import product.BankAccount;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BankTest {
 
@@ -25,7 +26,7 @@ public class BankTest {
     }
 
     @Then("Uzivatel ma zustatek na uctu {int} kc")
-    public void uzivatelMaZustatekNaUctuKc(int kocecnyZustatek) {
-
+    public void uzivatelMaZustatekNaUctuKc(int konecnyZustatek) {
+        assertEquals(konecnyZustatek, prvniUcet.getAccountBalance());
     }
 }

@@ -33,3 +33,4 @@ Feature: pokus
       | prvniCislo | druheCislo | vysledek |
       | 5          | 8          | 13       |
       | 500        | 234        | 734      |
+      | 300        | 250        | 551      |

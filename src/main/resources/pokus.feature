@@ -23,3 +23,11 @@ Feature: pokus
     Given Uzivatel ma zadany dve cisla 10 a 2
     When Uzivatel vydeli tato dve cisla
     Then Uzivatel vidi na kalkulacce vysledek 5
+
+  Scenario Outline: Kalkulacka - vice scenaru
+    Given Uzivatel ma zadany dve cisla 5 a 8
+    When Uzivatel secte tato dve cisla
+    Then Uzivatel vidi na kalkulacce vysledek 13
+
+    Examples:
+      |  |

@@ -1,3 +1,5 @@
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,9 +11,18 @@ public class CheckoutTest {
 
     Checkout nakupniKosik;
 
+    @Before
+    public void totoSeProvedeNaZacatkuKazdehoTestu(){
+        nakupniKosik = new Checkout();
+    }
+
+    @After
+    public void totoSeProvedeNaKOnciKazdehoTestu(){
+        nakupniKosik = null;
+    }
+
     @Given("cena za {string} je {int} kc")
     public void cenaZaJeKc(String nazevProduktu, int cenaProduktu) {
-        nakupniKosik = new Checkout();
         nakupniKosik.addItem(nazevProduktu, cenaProduktu);
     }
 
